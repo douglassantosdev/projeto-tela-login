@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-body, html {
+body {
     background-color: #0252a0;
     height: 100vh;
     width: 100vw;
@@ -31,11 +31,14 @@ section#login {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.066);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 section#login div#imagem {
-    background: #0252a0 url(../imagens/xports.jpg) no-repeat;
-    height: 250px;
+    display: block;
+    background: #0252a0 url(../imagens/pexels-harsch-shivam-2007647.jpg) no-repeat;
+    height: 200px;
     background-size: cover;
     background-position: center center;
 }
@@ -43,4 +46,9 @@ section#login div#imagem {
 section#login div#formulario {
     display: block;
     padding: 10px;
+}
+
+div#formulario h1 {
+    text-align: center;
+    margin-bottom: 10px;
 }
